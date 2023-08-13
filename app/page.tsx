@@ -1,11 +1,13 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Project from "@/components/Project";
 import Skills from "@/components/Skills";
+import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
   return (
-    <main className="z-0 h-screen   overflow-scroll bg-[rgb(36,36,36)] text-white">
+    <main className=" bg-[rgb(36,36,36)] text-white">
       <title>Portfolio</title>
       <Header />
 
@@ -21,8 +23,13 @@ export default function Home() {
         <Skills />
       </section>
 
-      {/* projects */}
-      {/* contact me */}
+      <section id="project" className="mt-20">
+        <Project />
+      </section>
+
+      <section id="contact" className="mt-20">
+        <ContactMe />
+      </section>
     </main>
   );
 }
